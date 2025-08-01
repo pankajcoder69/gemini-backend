@@ -207,7 +207,7 @@ if (topicInput && explainButton) {
         if (translateButton) translateButton.disabled = true;
 
         try {
-            const prompt = `Generate an explanation for "${topic}" in the following structured format, suitable for a 12-year-old with low conceptual knowledge. Ensure the explanation is fun, conceptual, and uses relevant examples and metaphors. Keep the explanation part less than 100 words not including the fun facts and quizes. Keep the fun facts very short like less than 9 words and keep the facts funny and visualization less than 40 words. Do not add the ** in the topic and main headings. Format the response with proper HTML elements like <h2>, <h3>, <p>, <strong>, <em>, <ul>, <li> for better readability. Use emojis to make it more engaging.
+            const prompt = `Generate an explanation for "${topic}" in the following structured format, suitable for a 12-year-old with low conceptual knowledge. Ensure the explanation is fun, conceptual, and uses relevant examples and metaphors. Keep the explanation part less than 100 words not including the fun facts and quizes. Keep the fun facts very short like less than 9 words and keep the facts funny and visualization less than 40 words. Do not add the ** in the topic and main headings. Format the response with proper HTML elements like <h2>, <h3>, <p>, <strong>, <em>, <ul>, <li> for better readability. Use emojis to make it more engaging. Keep sections compact with minimal spacing between them.
 
 🔍 Topic: ${topic}
 
@@ -218,10 +218,10 @@ if (topicInput && explainButton) {
 [Describe a simple scenario or image that helps visualize the concept.]
 
 🧪 Quick Quiz:
-[Create 4 simple quiz questions. Include 2 multiple-choice questions with 4 options (a, b, c, d) and 2 true/false question. Provide the correct answer for each question, prefixed with "➤ Correct: ".]
+[Create 4 simple quiz questions. Include 2 multiple-choice questions with 4 options (a, b, c, d) and 2 true/false question. Provide correct answer for each, prefixed with "➤ Correct: ". Format compactly without extra line breaks.]
 
 😄 Fun Fact:
-[Include 2,3 interesting and engaging fun facts related to the topic.]`;
+[Include 2-3 interesting and engaging fun facts related to the topic. Keep each fact on a single line without extra spacing.]`;
 
             // Send request to Flask backend
             const response = await fetch('/generate-explanation', {

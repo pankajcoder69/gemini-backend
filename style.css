@@ -603,6 +603,20 @@ body {
     margin: 0 auto;
 }
 
+/* Dark mode styles for mission card */
+.dark-mode .mission-card {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    border: 2px solid #555;
+}
+
+.dark-mode .mission-card h2 {
+    color: #219ebc;
+}
+
+.dark-mode .mission-card p {
+    color: #000;
+}
+
 /* Coverage Card Styles */
 .coverage-card {
     background: linear-gradient(135deg, #fff9db 0%, #fff3cd 100%);
@@ -647,6 +661,20 @@ body {
 
 .coverage-text {
     color: #444;
+}
+
+/* Dark mode styles for coverage card */
+.dark-mode .coverage-card {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    border: 2px solid #555;
+}
+
+.dark-mode .coverage-card h2 {
+    color: #219ebc;
+}
+
+.dark-mode .coverage-text {
+    color: #000;
 }
 
 /* How It Works Card */
@@ -703,6 +731,24 @@ body {
     color: #555;
     line-height: 1.6;
     margin: 0;
+}
+
+/* Dark mode styles for how it works card */
+.dark-mode .how-it-works-card {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    border: 2px solid #555;
+}
+
+.dark-mode .how-it-works-card h2 {
+    color: #219ebc;
+}
+
+.dark-mode .step-card h3 {
+    color: #219ebc;
+}
+
+.dark-mode .step-card p {
+    color: #000;
 }
 
 /* Call to Action Section */
@@ -763,6 +809,91 @@ body {
 .cta-section .cta-link:hover {
     color: #ff006e;
     text-decoration: underline;
+}
+
+/* Dark mode styles for CTA section */
+.dark-mode .cta-section {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    border: 2px solid #555;
+}
+
+.dark-mode .cta-section h2 {
+    color: #219ebc;
+}
+
+.dark-mode .cta-section .cta-text {
+    color: #000;
+}
+
+/* Feature card dark mode styles */
+.dark-mode .feature-card {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    border: 2px solid #555;
+}
+
+.dark-mode .feature-card h3 {
+    color: #219ebc;
+}
+
+.dark-mode .feature-card p {
+    color: #000;
+}
+
+/* Contact page additional styles */
+.response-time {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, #e8f4fd 0%, #bee5eb 100%);
+    border-radius: 12px;
+    border: 2px solid #219ebc;
+}
+
+.response-time h4 {
+    color: #0077b6;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.response-time p {
+    color: #444;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Dark mode for contact response time */
+.dark-mode .response-time {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    border: 2px solid #555;
+}
+
+.dark-mode .response-time h4 {
+    color: #219ebc;
+}
+
+.dark-mode .response-time p {
+    color: #000;
+}
+
+/* Dark mode for contact info card */
+.dark-mode .info-card {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+    border: 2px solid #555;
+}
+
+.dark-mode .info-card h3 {
+    color: #219ebc;
+}
+
+.dark-mode .info-card p {
+    color: #000;
+}
+
+.dark-mode .method-text h4 {
+    color: #219ebc;
+}
+
+.dark-mode .method-text p {
+    color: #000;
 }
 
 /* Contact Page Styles */
